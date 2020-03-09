@@ -1,0 +1,16 @@
+:root {
+    /*Fonts*/
+    --font-open: 'Open Sans', serif;
+    --font-saira: 'Saira Extra Condensed', serif;
+    /*Color*/
+    --color-primary: #343a40;
+    --color-segundar: #868e96;
+    --color-brown: #bd5d38;
+    /*Background*/
+    --bg-defaut: #bd5d38;
+    /*Margin*/
+    --mrt-auto: auto;
+    --mrb-auto: auto;
+    /*Display flex*/
+    --dp-flex: flex !important;
+}

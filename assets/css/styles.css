@@ -1,0 +1,141 @@
+@import url('../css/reset.css');
+@import url('../css/veriables.css');
+html {}
+
+body {
+    padding-top: 0;
+    padding-left: 17rem;
+    font-family: var(--font-open);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-segundar);
+    line-height: 1.5;
+}
+
+#navFixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17rem;
+    height: 100vh;
+}
+
+nav {
+    background: var(--bg-defaut) !important;
+}
+
+.profile img {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: .5rem solid rgba(255, 255, 255, .2);
+    border-radius: 50% !important;
+    margin-bottom: .5rem;
+}
+
+menu {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.menu .item {
+    display: block;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .5);
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    color: rgba(255, 255, 255, .75);
+}
+
+.menu a.active {
+    color: rgba(255, 255, 255, 100);
+}
+
+.main {
+    width: 100%;
+}
+
+section {
+    padding: 3rem;
+}
+
+section#about {
+    min-height: 86vh;
+}
+
+.df {
+    display: var(--dp-flex);
+}
+
+.auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+h1 {
+    font-family: var(--font-saira);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 6rem;
+    line-height: 5.5rem;
+    color: var(--color-primary);
+}
+
+.text-small-color {
+    color: var(--color-brown);
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--font-saira);
+    font-size: 1.35rem;
+    margin-bottom: 3rem;
+}
+
+.subheading>a {
+    text-decoration: none;
+}
+
+.description {
+    margin-bottom: 3rem;
+}
+
+.list-inline-item {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.display-flex {
+    display: var(--dp-flex);
+}
+
+.list-inline-item a {
+    color: var(--color-primary);
+}
+
+.list-inline-item a:hover {
+    color: var(--color-brown);
+}
+
+.list-inline-item a .fa-lg {
+    font-size: 1.75rem;
+}

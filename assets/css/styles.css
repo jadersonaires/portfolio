@@ -74,11 +74,11 @@ menu {
 }
 
 section {
-    padding: 3rem;
+    padding: 0rem 3rem;
 }
 
 section#about {
-    min-height: 86vh;
+    min-height: 100vh;
 }
 
 .df {
@@ -129,7 +129,7 @@ h1 {
 }
 
 .list-inline-item a {
-    color: var(--color-primary);
+    color: #495057;
 }
 
 .list-inline-item a:hover {

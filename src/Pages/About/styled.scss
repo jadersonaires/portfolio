@@ -1,0 +1,71 @@
+@import url('../../css/veriables.css');
+
+section{
+    padding: 3rem 3rem;
+    min-height: 100vh;
+    display: var(--dp-flex);
+    border-bottom: 1px solid #dee2e6;
+
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    .auto{
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    h1 {
+        font-family: var(--font-saira);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 6rem;
+        line-height: 5.5rem;
+        color: var(--color-primary);
+
+        span, 
+        .text-small-color {
+            color: var(--color-brown);
+        }
+    }
+
+    .text-small-color {
+        color: var(--color-brown);
+    }
+    
+    .subheading {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: var(--font-saira);
+        font-size: 1.35rem;
+        margin-bottom: 3rem;
+    }
+    
+    .subheading>a {
+        text-decoration: none;
+    }
+    
+    .description {
+        margin-bottom: 3rem;
+    }
+    
+    .list-inline-item {
+        margin-right: 5px;
+        display: inline-block;
+    }
+    
+    .display-flex {
+        display: var(--dp-flex);
+    }
+    
+    .list-inline-item a {
+        color: #495057;
+    }
+    
+    .list-inline-item a:hover {
+        color: var(--color-brown);
+    }
+    
+    .list-inline-item a .fa-lg {
+        font-size: 1.75rem;
+    }
+}

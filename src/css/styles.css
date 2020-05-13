@@ -1,0 +1,11 @@
+@import url('./veriables.css');
+
+body {
+    padding-top: 0;
+    padding-left: 17rem;
+    font-family: var(--font-open);
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-segundar);
+    line-height: 1.5;
+}

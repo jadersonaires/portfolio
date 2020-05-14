@@ -15,7 +15,7 @@ export const nameWithHTML = (fullName) => {
 }
 
 const addTagsHTML = (surname) => {
-    return "<span className='text-small-color'>" + surname + "</span>"
+    return "<span>" + surname + "</span>"
 }
 
 const transformNameInArray = (fullName) => {

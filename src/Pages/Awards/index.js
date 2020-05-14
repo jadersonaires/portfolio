@@ -11,7 +11,6 @@ class index extends Component {
     componentDidMount = async () => {
         const awards = await read()
         this.setState({ awards })
-        console.log(awards)
     }
 
     eachAwards = () => {

@@ -12,7 +12,6 @@ class index extends Component {
     componentDidMount = async () => {
         const experiece = await read()
         this.setState({ experiece })
-        console.log(formateDateMonthYear('2019-02-13'))
     }
 
     eachExperience = () => {

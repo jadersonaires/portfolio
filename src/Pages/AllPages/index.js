@@ -18,8 +18,8 @@ const AllPages = () => {
             <About />
             <Experience />
             <Education />
-            {/* <Skills />
-            <Interests />
+            <Skills />
+            {/* <Interests />
             <Awards /> */}
         </Main>
     )

@@ -1,0 +1,70 @@
+@import url('../../css/veriables.css');
+
+section#skills{
+    padding: 3rem 3rem;
+    min-height: 100vh;
+    display: var(--dp-flex);
+    border-bottom: 1px solid #dee2e6;
+
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    .auto{
+        width: 100%;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    h2{
+        font-family: var(--font-saira);
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        color: #343a40;
+              
+    }
+
+    article{
+        display: flex;
+        flex-direction: column;
+
+        div.description{
+            flex: 1;
+        }
+
+        p{
+            font-family: var(--font-saira);
+            font-size: 1.35rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+        }
+
+        li{
+            padding: 15px 10px;
+            margin-right: 10px;
+        }
+
+        li:hover i{
+            color: var(--color-brown);
+        }
+
+        i{
+            font-size: 3rem;
+            color: #868e96;
+        }
+    }
+
+    article:last-child{
+        margin-bottom: 0rem;
+    }
+}

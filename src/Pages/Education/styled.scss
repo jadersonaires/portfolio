@@ -1,0 +1,64 @@
+@import url('../../css/veriables.css');
+
+section#education{
+    padding: 3rem 3rem;
+    min-height: 100vh;
+    display: var(--dp-flex);
+    border-bottom: 1px solid #dee2e6;
+
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    .auto{
+        width: 100%;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    h2{
+        font-family: var(--font-saira);
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        color: #343a40;        
+    }
+
+    article{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3rem;
+
+        div.description{
+            flex: 1;
+        }
+
+        h4{
+            font-family: var(--font-saira);
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+
+        p{
+            font-family: var(--font-saira);
+            font-size: 1.35rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .date{
+            min-width: 18rem;
+            color: var(--color-brown);
+            text-transform: capitalize;
+            text-align: right;
+        }
+    }
+
+    article:last-child{
+        margin-bottom: 0rem;
+    }
+}

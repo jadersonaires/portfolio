@@ -1,0 +1,26 @@
+@import url('../../css/veriables.css');
+
+section#interests{
+    padding: 3rem 3rem;
+    min-height: 100vh;
+    display: var(--dp-flex);
+    border-bottom: 1px solid #dee2e6;
+
+    -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    .auto{
+        width: 100%;
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+    }
+
+    h2{
+        font-family: var(--font-saira);
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+        color: #343a40;        
+    }
+}

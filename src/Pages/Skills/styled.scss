@@ -1,6 +1,6 @@
 @import url('../../css/veriables.css');
 
-section#experience{
+section#skills{
     padding: 3rem 3rem;
     min-height: 100vh;
     display: var(--dp-flex);
@@ -21,24 +21,16 @@ section#experience{
         font-weight: 700;
         margin-bottom: 3rem;
         text-transform: uppercase;
-        color: #343a40;        
+        color: #343a40;
+              
     }
 
     article{
         display: flex;
-        flex-direction: row;
-        margin-bottom: 3rem;
+        flex-direction: column;
 
         div.description{
             flex: 1;
-        }
-
-        h4{
-            font-family: var(--font-saira);
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--color-primary);
-            text-transform: uppercase;
         }
 
         p{
@@ -50,11 +42,25 @@ section#experience{
             text-transform: uppercase;
         }
 
-        .date{
-            min-width: 18rem;
+        ul{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+        }
+
+        li{
+            padding: 15px 10px;
+            margin-right: 10px;
+        }
+
+        li:hover i{
             color: var(--color-brown);
-            text-transform: capitalize;
-            text-align: right;
+        }
+
+        i{
+            font-size: 3rem;
+            color: #868e96;
         }
     }
 

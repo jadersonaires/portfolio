@@ -37,7 +37,7 @@ class index extends Component {
                         &#183; {this.state.phone} &#183;
                         <a href="http://localhost:3000/" className="text-small-color">{this.state.email}</a>
                     </div>
-                    <div className="description">
+                    <div className="about-description">
                         {this.state.description}
                     </div>
                 </div>

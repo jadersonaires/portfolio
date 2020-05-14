@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { read } from './actions'
+import { formateDateMonthYear } from '../../help/formateDate'
 import './styled.scss'
 
 class index extends Component {
@@ -11,7 +12,7 @@ class index extends Component {
     componentDidMount = async () => {
         const experiece = await read()
         this.setState({ experiece })
-        console.log(this.state)
+        console.log(formateDateMonthYear('2019-02-13'))
     }
 
     eachExperience = () => {
@@ -26,7 +27,7 @@ class index extends Component {
                     </div>
                 </div>
                 <div className="date">
-                    {item.dateStart}
+                {formateDateMonthYear(item.dateStart)} - {formateDateMonthYear(item.dateLast)}
                 </div>
             </article>
         ))

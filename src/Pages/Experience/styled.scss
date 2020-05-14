@@ -4,6 +4,7 @@ section{
     padding: 3rem 3rem;
     min-height: 100vh;
     display: var(--dp-flex);
+    border-bottom: 1px solid #dee2e6;
 
     -moz-box-sizing: border-box;
         box-sizing: border-box;
@@ -50,6 +51,11 @@ section{
 
         .date{
             color: var(--color-brown);
+            text-transform: capitalize;
         }
+    }
+
+    article:last-child{
+        margin-bottom: 0rem;
     }
 }

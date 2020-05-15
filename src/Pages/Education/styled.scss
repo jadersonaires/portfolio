@@ -62,3 +62,17 @@ section#education{
         margin-bottom: 0rem;
     }
 }
+
+@media screen and (max-width: 992px) {
+    section#education article {
+        flex-direction: column;
+    }
+
+    section#education article div.description{
+        margin-bottom: 1rem;
+    }
+
+    section#education article .date{
+        width: 50%;
+    }
+}

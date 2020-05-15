@@ -9,3 +9,20 @@ body {
     color: var(--color-segundar);
     line-height: 1.5;
 }
+
+@media screen and (max-width: 992px) {
+    body {
+        padding-left: 0rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    section#about,
+    section#experience,
+    section#education,
+    section#skills,
+    section#interests,
+    section#awards{
+        padding: 1rem 1rem;
+    }
+}

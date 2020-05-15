@@ -43,3 +43,18 @@ section#awards{
         
     }
 }
+
+@media screen and (max-width: 992px) {
+    section#awards article .item {
+        margin-bottom: .5rem;
+    }
+
+    section#awards article .item > svg{
+        margin-right: 15px;
+    }
+    
+    section#awards article .item > div{
+        width: 80%;
+    }
+
+}

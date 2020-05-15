@@ -54,3 +54,9 @@ menu.menu {
         color: rgba(255, 255, 255, 100);
     }
 }
+
+@media screen and (max-width: 992px) {
+    #navFixed {
+        display: none;
+    }
+}

@@ -62,3 +62,17 @@ section#experience{
         margin-bottom: 0rem;
     }
 }
+
+@media screen and (max-width: 992px) {
+    section#experience article {
+        flex-direction: column;
+    }
+
+    section#experience article div.description{
+        margin-bottom: 1rem;
+    }
+
+    section#experience article .date{
+        width: 50%;
+    }
+}

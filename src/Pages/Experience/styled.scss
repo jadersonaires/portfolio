@@ -75,4 +75,8 @@ section#experience{
     section#experience article .date{
         width: 50%;
     }
+
+    section#experience article:last-child{
+        margin-bottom: 3rem;
+    }
 }

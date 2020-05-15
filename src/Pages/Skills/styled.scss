@@ -47,6 +47,7 @@ section#skills{
             flex-direction: row;
             align-items: center;
             justify-items: center;
+            flex-wrap: wrap;
         }
 
         li{
@@ -66,5 +67,11 @@ section#skills{
 
     article:last-child{
         margin-bottom: 0rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    section#skills article i{
+        font-size: 1.5rem;
     }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser'
-import Networks from '../../components/networks'
+// import Networks from '../../components/networks'
 import { readFrontEnd } from './actions'
 import { nameWithHTML } from '../../help/nameHome'
 import './styled.scss'

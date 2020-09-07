@@ -5,6 +5,8 @@ import { readFrontEnd } from './actions'
 import { nameWithHTML } from '../../help/nameHome'
 import './styled.scss'
 
+import Skeleton from 'react-loading-skeleton'
+
 class index extends Component {
 
     state = {
@@ -13,7 +15,8 @@ class index extends Component {
         email: '',
         adress: '',
         description: '',
-        image: ''
+        image: '',
+        loading: false
     }
 
     componentDidMount = async () => {
@@ -24,26 +27,32 @@ class index extends Component {
             email: about.email,
             adress: about.adress,
             description: about.description,
-            image: null
+            image: null,
+            loading: true
         })
     }
 
     render() {
         return (
-            <section id="about">
-                <div className="auto">
-                    <h1>{ReactHtmlParser(this.state.name)}</h1>
-                    <div className="subheading">
-                        {this.state.adress}
-                        &#183; {this.state.phone} &#183;
-                        <a href="http://localhost:3000/" className="text-small-color">{this.state.email}</a>
-                    </div>
-                    <div className="about-description">
-                        {this.state.description}
-                    </div>
-                    {/* <Networks /> */}
-                </div>
-            </section>
+            <>
+                {!this.state.loading ?
+                    'loading...' :
+                    <section id="about">
+                        <div className="auto">
+                            <h1>{ReactHtmlParser(this.state.name)}</h1>
+                            <div className="subheading">
+                                {this.state.adress}
+                            &#183; {this.state.phone} &#183;
+                            <a href="http://localhost:3000/" className="text-small-color">{this.state.email}</a>
+                            </div>
+                            <div className="about-description">
+                                {this.state.description}
+                            </div>
+                            {/* <Networks /> */}
+                        </div>
+                    </section>
+                }
+            </>
         );
     }
 }

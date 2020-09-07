@@ -5,7 +5,6 @@ export const readFrontEnd = async () => {
         const response = await api.get(`/about/front-end`)
         if (response.status === 200)
             return response.data
-
     } catch (error) {
         console.log(error.response.data)
     }

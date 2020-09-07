@@ -41,7 +41,7 @@ class index extends Component {
                     <div className="about-description">
                         {this.state.description}
                     </div>
-                    <Networks />                    
+                    {/* <Networks /> */}
                 </div>
             </section>
         );

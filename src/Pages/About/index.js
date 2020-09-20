@@ -62,8 +62,7 @@ class index extends Component {
                                 {this.state.description}
                             </ReactPlaceholder>
                         </div>
-                        { this.state.loading && 
-                            <Networks />  }
+                        {/* <Networks /> */}
                         
                     </div>
                 </section>

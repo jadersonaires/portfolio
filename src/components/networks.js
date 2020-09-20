@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import api from '../services/api'
 
-import ReactPlaceholder from 'react-placeholder';
-import "react-placeholder/lib/reactPlaceholder.css";
-
 function RedeSocial() {
 
     const [networks, setNetworks] = useState([])

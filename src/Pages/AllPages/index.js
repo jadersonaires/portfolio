@@ -8,6 +8,7 @@ import Interests from '../Interests'
 import Skills from '../Skills'
 
 //Css
+import "react-placeholder/lib/reactPlaceholder.css";
 import '../../css/styles.css'
 import { Main } from './styled'
 

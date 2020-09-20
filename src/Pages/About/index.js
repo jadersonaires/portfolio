@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser'
-// import Networks from '../../components/networks'
+import Networks from '../../components/networks'
+
+import ReactPlaceholder from 'react-placeholder';
+
+
 import { readFrontEnd } from './actions'
 import { nameWithHTML } from '../../help/nameHome'
 import './styled.scss'
-
-import Skeleton from 'react-loading-skeleton'
 
 class index extends Component {
 
@@ -13,7 +15,7 @@ class index extends Component {
         name: '',
         phone: '',
         email: '',
-        adress: '',
+        address: '',
         description: '',
         image: '',
         loading: false
@@ -25,7 +27,7 @@ class index extends Component {
             name: nameWithHTML(about.name),
             phone: about.phone,
             email: about.email,
-            adress: about.adress,
+            address: about.adress,
             description: about.description,
             image: null,
             loading: true
@@ -35,23 +37,36 @@ class index extends Component {
     render() {
         return (
             <>
-                {!this.state.loading ?
-                    'loading...' :
-                    <section id="about">
-                        <div className="auto">
-                            <h1>{ReactHtmlParser(this.state.name)}</h1>
-                            <div className="subheading">
-                                {this.state.adress}
-                            &#183; {this.state.phone} &#183;
-                            <a href="http://localhost:3000/" className="text-small-color">{this.state.email}</a>
-                            </div>
-                            <div className="about-description">
-                                {this.state.description}
-                            </div>
-                            {/* <Networks /> */}
+                <section id="about">
+                    <div className="auto" style={{ width: '100%' }}>
+
+                        <h1>
+                            <ReactPlaceholder type='textRow' delay={2000} showLoadingAnimation={true} ready={this.state.loading} color='#E0E0E0'>
+                                {ReactHtmlParser(this.state.name)}
+                            </ReactPlaceholder>
+                        </h1>
+
+
+                        <div className="subheading">
+                            <ReactPlaceholder type='textRow' delay={2000} showLoadingAnimation={true} ready={this.state.loading} color='#E0E0E0'>
+                                {this.state.address}
+                                        &#183; {this.state.phone} &#183;
+                                        <a href="/" className="text-small-color">
+                                    {this.state.email}
+                                </a>
+                            </ReactPlaceholder>
                         </div>
-                    </section>
-                }
+
+                        <div className="about-description">
+                            <ReactPlaceholder type='text' delay={2000} showLoadingAnimation={true} ready={this.state.loading} rows={2} color='#E0E0E0'>
+                                {this.state.description}
+                            </ReactPlaceholder>
+                        </div>
+                        { this.state.loading && 
+                            <Networks />  }
+                        
+                    </div>
+                </section>
             </>
         );
     }

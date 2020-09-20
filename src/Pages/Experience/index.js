@@ -6,16 +6,16 @@ import './styled.scss'
 class index extends Component {
 
     state = {
-        experiece: []
+        experience: [],
     }
 
     componentDidMount = async () => {
-        const experiece = await read()
-        this.setState({ experiece })
+        const experience = await read()
+        this.setState({ experience })
     }
 
     eachExperience = () => {
-        const list = this.state.experiece || []
+        const list = this.state.experience || []
         return list.map(item => (
             <article key={item.id}>
                 <div className="description">

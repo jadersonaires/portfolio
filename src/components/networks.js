@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import api from '../services/api'
 
+import ReactPlaceholder from 'react-placeholder';
+import "react-placeholder/lib/reactPlaceholder.css";
 
 function RedeSocial() {
 
@@ -12,7 +14,7 @@ function RedeSocial() {
             setNetworks(response.data)
         }
         loadNetworks()
-    }, [networks])
+    }, [])
 
 
     return (
@@ -26,7 +28,7 @@ function RedeSocial() {
                         </span>
                     </a>
                 </li>
-            ))}            
+            ))}
         </ul>
     )
 }

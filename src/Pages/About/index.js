@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser'
 
 import ReactPlaceholder from 'react-placeholder';
-
+import Networks from '../../components/networks'
 
 import { readFrontEnd } from './actions'
 import { nameWithHTML } from '../../help/nameHome'
@@ -60,9 +60,10 @@ class index extends Component {
                             <ReactPlaceholder type='text' delay={2000} showLoadingAnimation={true} ready={this.state.loading} rows={2} color='#E0E0E0'>
                                 {this.state.description}
                             </ReactPlaceholder>
-                        </div>                        
-                    </div>
-                </section>
+                        </div>      
+                        { this.state.loading &&  <Networks />}
+                    </div>                                  
+                </section>    
             </>
         );
     }

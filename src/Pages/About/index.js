@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser'
-// import Networks from '../../components/networks'
 
 import ReactPlaceholder from 'react-placeholder';
 
@@ -34,7 +33,7 @@ class index extends Component {
         })
     }
 
-    render() {
+    render() {       
         return (
             <>
                 <section id="about">
@@ -61,9 +60,7 @@ class index extends Component {
                             <ReactPlaceholder type='text' delay={2000} showLoadingAnimation={true} ready={this.state.loading} rows={2} color='#E0E0E0'>
                                 {this.state.description}
                             </ReactPlaceholder>
-                        </div>
-                        {/* <Networks /> */}
-                        
+                        </div>                        
                     </div>
                 </section>
             </>

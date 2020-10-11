@@ -6,7 +6,7 @@ import Header from './components/header'
 
 const Router = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Header />
             <Switch>
                 <Route exact path={`/`} component={AllPages} />

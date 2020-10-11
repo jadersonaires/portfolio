@@ -10,6 +10,10 @@ In this project I will show my portfolio with some information of mine that I ha
 * Styled Component
 * Api Rest
 
+##### Image
+![](https://github.com/jadersonaires/portfolio/blob/master/src/img/portfolio-web.PNG)
+> Project image
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 

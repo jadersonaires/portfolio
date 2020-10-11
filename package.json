@@ -1,5 +1,5 @@
 {
-  "name": "portfolio_front_end",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "homepage": "http://jadersonaires.github.io/portfolio",
@@ -23,12 +23,12 @@
     "styled-components": "^5.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"    
   },
   "eslintConfig": {
     "extends": "react-app"

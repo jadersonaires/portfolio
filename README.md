@@ -1,0 +1,16 @@
+# My Portfolio in React
+
+[Url do Project](https://jadersonaires.github.io/portfolio/)
+
+In this project I will show my portfolio with some information of mine that I have worked with. I am learning react web so I decided to create this page in a curriculum format.
+
+##### Used in the project
+
+* React Web
+* Styled Component
+* Api Rest
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+

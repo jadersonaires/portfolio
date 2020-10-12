@@ -1,4 +1,4 @@
-# My Portfolio in React
+# 🚀 My Portfolio in React
 
 [Project URL](https://jadersonaires.github.io/portfolio/)
 
